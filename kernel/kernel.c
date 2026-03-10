@@ -1,11 +1,19 @@
+#include "../drivers/screen.h"
+#include "../drivers/keyboard.h"
+
 void kernel_main() {
 
-    char *video = (char*)0xb8000;
-
-    video[0] = 'P';
-    video[1] = 0x07;
+    screen_clear();
+    screen_print("PerryOS iniciado\n");
 
     while (1) {
 
+        char c = keyboard_read();
+
+        if (c) {
+            screen_print_char(c);
+        }
+
     }
+
 }

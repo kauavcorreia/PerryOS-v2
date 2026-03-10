@@ -1,3 +1,11 @@
-create_file()
-read_file()
-write_file()
+void fs_init(){
+
+}
+
+void fs_read(){
+
+}
+
+void fs_write(){
+    
+}
