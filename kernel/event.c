@@ -1,3 +1,0 @@
-void event_dispatch() {
-
-}

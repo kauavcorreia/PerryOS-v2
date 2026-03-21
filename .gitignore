@@ -1,0 +1,13 @@
+# build
+build/
+output/
+
+# objetos compilados
+*.o
+
+# binários
+*.bin
+
+# outros
+*.elf
+*.img
